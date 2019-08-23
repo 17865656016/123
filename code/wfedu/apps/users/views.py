@@ -30,9 +30,10 @@ from redis import StrictRedis
 
 
 
-@cache_page(15*60)
+#@cache_page(15*60)
 def index(request):
     all_banners = BannerInfo.objects.all().order_by('-add_time')[:5]
+    print(all_banners)
     banner_courses = CourseInfo.objects.filter(is_banner=True)[:3]
     all_courses = CourseInfo.objects.filter(is_banner=False)[:6]
     all_orgs = OrgInfo.objects.all()[:15]
