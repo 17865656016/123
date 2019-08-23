@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': 'WFedu',
         'USER': 'root',
         'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'HOST': '10.0.108.27',
         'PORT': '3306',
     }
 }

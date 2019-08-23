@@ -30,7 +30,7 @@ from redis import StrictRedis
 
 
 
-#@cache_page(15*60)
+
 def index(request):
     all_banners = BannerInfo.objects.all().order_by('-add_time')[:5]
     print(all_banners)
